@@ -4,15 +4,17 @@ Description
 Annotation validator is a ZF2 package used to validate Doctrine Entities
 during their lifecycle call backs (events).
 
-By using Annotation Validator into your projects you can reduce production time.
-At the same time, Junior developers that are involved into you project 
-don't have to care about validation (validation happens in one and only place) 
-and so you can be sure that your persistence layer is more protected 
+By using Annotation Validator in your projects you can enhance productivity.
+At the same time, Junior developers who are involved in your project 
+don't have to be concerned about validation since it takes place in entities.  
+You can also be sure that your persistence layer is more protected 
 against code vulnerabilities.
 
-At the moment data validated just before flush. This is against the idea of using an ORM (such as Doctrine)
-where entities must be valid after construction. However this package solved a lot of real life problems
-for me and I think this is what matters when sharing code.
+At the moment data is validated just before flush, against the idea of using an ORM
+where entities must be valid after their "construction". 
+
+However this package solved a lot of real life problems for me and I think that 
+this is what matters when sharing code.
 
 Installation
 ------------
