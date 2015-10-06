@@ -2,7 +2,7 @@
   "name":         "ibekiaris/zf2-annotation-validator",
   "description":  "Add validation annotations to doctrine entity",
   "type":         "library",
-  "license":      "MIT",
+  "license":      "BSD 3-Clause",
   "homepage":     "https://github.com/ibekiaris",
   "keywords": [
     "zf2",
