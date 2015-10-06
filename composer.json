@@ -1,0 +1,36 @@
+{
+  "name":         "ibekiaris/zf2-annotation-validator",
+  "description":  "Add validation annotations to doctrine entity",
+  "type":         "library",
+  "license":      "MIT",
+  "homepage":     "https://github.com/Saeven/CirclicalACLAdmin",
+  "keywords": [
+    "zf2",
+    "doctrine",
+    "annotations",
+    "validation"
+  ],
+  "authors": [
+    {
+      "name":  "Ioannis Bekiaris",
+      "email": "bekiarisgiannis85@gmail.com",
+      "role":  "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.*",
+    "webiny/annotations" : "1.3.0",
+    "doctrine/doctrine-orm-module": "0.*",
+  },
+  "autoload": {
+    "psr-4": {
+      "AnnotationValidator\\": "src/AnnotationValidator"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
