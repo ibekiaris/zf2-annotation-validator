@@ -3,7 +3,7 @@
   "description":  "Add validation annotations to doctrine entity",
   "type":         "library",
   "license":      "MIT",
-  "homepage":     "https://github.com/Saeven/CirclicalACLAdmin",
+  "homepage":     "https://github.com/ibekiaris",
   "keywords": [
     "zf2",
     "doctrine",
