@@ -107,5 +107,5 @@ protected $facebookAccountUrl;
 
 ### LICENSE
 
-The files in this archive are released under the MIT license.
+The files in this archive are released under license.
 You can find a copy of this license in [LICENSE.txt](LICENSE.txt).
