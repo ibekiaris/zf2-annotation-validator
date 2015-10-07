@@ -19,6 +19,31 @@ this is what matters when sharing code.
 Installation
 ------------
 
+1) With composer:
+ 
+```
+composer require ibekiaris/zf2-annotation-validator
+```
+
+2) Directly in you ZF2 project:
+
+Just copy module files into "module" directory
+
+
+In any case, after including code, add the following lines in application.config.php
+
+```
+'modules' => array(
+        'Application',
+        'AnnotationValidator'
+    ),
+
+```
+
+Finally add "module.config.sample.php" lines into your global or local project configuration file.
+You have to change of course 'validation_classes_aliases' according your needs.
+
+
 Documentation
 -------------
 
@@ -54,16 +79,13 @@ class Client
 
 ```
 
-As we see in the previous example I am using @VLD annotation for validate $name property. 
+Use @VLD annotation to validate $name property. 
 
-Feel free to select the validation annotation in module configuration. 
-Validation Type is also declared into module's configuration
 
 e.g module.config.php
 
 ```
 return [
-    'validator_annotation' => 'VLD',
     'validation_classes_aliases' => [
         'RequiredString' => [
             'validation_class' => '\Zend\Validator\Regex',

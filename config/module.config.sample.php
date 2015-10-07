@@ -1,7 +1,9 @@
 <?php
-
+/**
+ * Include that in you global or local configuration file
+ * Check the cache_dir option to match your cache folder map
+ */
 return [
-    'validator_annotation' => 'VLD',
     'validation_cache_enabled' => false,
     // Validation Aliases
     'validation_classes_aliases' => [
@@ -17,7 +19,7 @@ return [
         'adapter' => [
             'name' => 'filesystem',
             'options' => [
-                'cache_dir' => dirname(dirname(dirname(__DIR__))) . '/data/cache',
+                'cache_dir' => dirname(dirname(__DIR__)) . '/data/cache',
                 'namespace' => 'annotation_validator',
                 'dirPermission' => 0775,
                 'filePermission' => 0664,
@@ -26,11 +28,6 @@ return [
         'plugins' => [
             'exception_handler' => ['throw_exceptions' => true],
             'Serializer',
-        ],
-    ],
-    'service_manager' => [
-        'factories' => [
-            'ValidatorCacheAdapter' => 'AnnotationValidator\Factory\AnnotationsValidatorCacheAdapterFactory',
         ],
     ],
 ];
